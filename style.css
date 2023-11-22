@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #011627;
+}
+ 
+.content_container {
+    margin: 0 auto;
+    max-width: 657px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 128px;
+    gap: 39px;
+    user-select: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+@font-palette-values --Nabla {
+    font-family: 'Nabla';
+    base-palette: 3;
+    override-colors:   
+      0 rgb(255, 0, 0),
+      1 rgb(255, 255, 255),
+      2 rgb(255, 255, 255),
+      3 rgb(255, 255, 255);
+  }
+  
+  h1 {
+    font-family: "Rubik";
+    font-size: 2.9rem;
+    color: #ffff;
+  }
+
+  h2 {
+    font-family: "Nabla";
+    font-size: clamp(2.5rem,30vw,8rem)
+  }
+
+  label {
+    font-family: "Rubik";
+    font-size: 1.2rem;
+    color: #ffff;
+  }
+
+  .error {
+    display: none;
+    color: #00b7eb;
+    font-size: 17px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #00b7eb;
+    border-radius: 3px;
+  }
+
+  .inputNumber {
+    width: 207px;
+    border-radius: 6px;
+    height: 28px;
+    padding-left: 6px;
+    margin: 0 auto;
+  }
+
+  .submit_BTN {
+    background: #216e39;
+    color: #ffff;
+    cursor: pointer;
+    border: 1px solid #216e39;
+    padding: 7px;
+    border-radius: 6px;
+    width: 198px;
+    font-size: 13px;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+  }
